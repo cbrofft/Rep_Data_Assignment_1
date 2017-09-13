@@ -2,7 +2,9 @@
 title: "PA1_Template.Rmd"
 author: "Chris Brofft"
 date: "9/12/2017"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 # Reproducible Research: Peer Assessment 1
 ```{r}
