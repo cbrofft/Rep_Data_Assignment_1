@@ -10,6 +10,7 @@ downloadFile <- "./repdata%2Fdata%2Factivity.zip"
 activityfile <- "./activity.csv"
 download.file(fileURL, downloadFile, method = "curl")
 unzip(downloadFile, overwrite = T, exdir = "./")
+unlink(downloadFile)
 
 ## Create activity data frame and change date from factor to date type (will be needed later)
 activity <-read.csv(activityfile, header=T, sep=",")
